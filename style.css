@@ -1,0 +1,99 @@
+:root {
+    --bg-color: #0d0e15;
+    --card-bg: #181a24;
+    --accent-color: #00ffcc;
+    --text-color: #e0e0e0;
+    --highlight-color: #ff0055;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Share Tech Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    border-bottom: 4px solid var(--accent-color);
+    padding: 20px 0;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--highlight-color);
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 4px;
+}
+
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.1rem;
+    color: var(--accent-color);
+    border-bottom: 2px dashed #444;
+    padding-bottom: 8px;
+}
+
+/* Contenedor del Videojuego */
+.game-container {
+    border: 3px solid var(--accent-color);
+    margin: 20px 0;
+    background-color: #000;
+}
+
+/* Botones Retro */
+.btn-retro, .btn-download {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: #000;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8rem;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: 0.2s;
+}
+
+.btn-retro:hover, .btn-download:hover {
+    background-color: var(--highlight-color);
+    color: #fff;
+}
+
+/* Infografías */
+.grid-infografias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.info-card img {
+    width: 100%;
+    border: 1px solid #444;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+}
