@@ -79,21 +79,38 @@ h2 {
     color: #fff;
 }
 
-/* Infografías */
+/* Actualización para la sección de Infografías */
 .grid-infografias {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.info-card {
+    background: #0d0e15;
+    border: 2px solid #333;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.info-card h3 {
+    font-family: 'Share Tech Mono', monospace;
+    color: var(--accent-color);
+    font-size: 1rem;
+    margin-bottom: 12px;
 }
 
 .info-card img {
     width: 100%;
+    height: auto;
     border: 1px solid #444;
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9rem;
-    border-top: 1px solid #333;
+.info-card img:hover {
+    transform: scale(1.02);
+    border-color: var(--accent-color);
 }
