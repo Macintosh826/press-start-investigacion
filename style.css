@@ -114,3 +114,24 @@ h2 {
     transform: scale(1.02);
     border-color: var(--accent-color);
 }
+
+/* Estilos para la portada interactiva del juego */
+.game-cover-container {
+    border: 3px solid var(--accent-color);
+    margin: 20px 0;
+    background-color: #000;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.game-cover-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.game-cover-img:hover {
+    transform: scale(1.02);
+}
